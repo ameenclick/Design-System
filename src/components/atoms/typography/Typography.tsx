@@ -1,8 +1,8 @@
 import React from "react";
-import TypographyPropsType from "./type"; //validate TypographyPropsType is a type that represents the props of the Typography component.
+import TagPropsType from "./type"; //validate TagPropsType is a type that represents the props of the Tag component.
 
-const Typography = ({ 
-    tag="p",
+const Tag = ({ 
+    type="p",
     text,
     classes,
     style,
@@ -46,9 +46,10 @@ const Typography = ({
     itemPropItemID,
     itemPropItemScope,
     itemPropItemType
-}: TypographyPropsType) => {
+}: TagPropsType) => {
     return (
-        React.createElement(tag, {
+        React.createElement(type // Tag type
+            , {
             className: classes,
             style: style, //The style should follow the React.CSSProperties type.
             areaLabel: ariaLabel, //The ariaLabel should follow the string type.
@@ -97,4 +98,4 @@ const Typography = ({
     );
 }
 
-export default Typography;
+export default Tag;

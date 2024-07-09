@@ -1,7 +1,7 @@
 import React from "react";
 
 interface TypographyPropsType {
-    tag: keyof JSX.IntrinsicElements, // validate keyof JSX.IntrinsicElements is a type that represents all the HTML tags that can be used in JSX.
+    type: keyof JSX.IntrinsicElements, // validate keyof JSX.IntrinsicElements is a type that represents all the HTML tags that can be used in JSX.
     text: string, // validate text is a string that represents the text that will be displayed.
     classes?: string, // validate classes is a string that represents the CSS classes that will be applied to the element.
     children?: React.ReactNode // validate children is a ReactNode that represents the children of the element.

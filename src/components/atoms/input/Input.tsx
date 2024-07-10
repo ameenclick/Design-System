@@ -1,4 +1,4 @@
-import React from "react";
+
 import InputPropsType from "./props"
 
 const Input = ({ 

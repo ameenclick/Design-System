@@ -1,9 +1,10 @@
+import React from "react";
 
-interface ButtonPropsType extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    type?: "button" | "submit" | "reset", // validate type is a string that represents the type of the button element.
-    label?: string, // validate label is a string that represents the label of the button element.
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void, // validate onClick is a function that handles the click event of the button element.
-    onSubmit?: (event: React.FormEvent<HTMLButtonElement>) => void, // validate onSubmit is a function that handles the submit event of the button element.
+interface SelectPropsType {
+    value: string, // validate value is a string that represents the value of the select element.
+    options: Array<{ value: string, text: string }>, // validate options is an array of objects that represent the options of the select element.
+    onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void, // validate onChange is a function that handles the change event of the select element.
+    label?: string, // validate label is a string that represents the label of the select element.
     classes?: string, // validate classes is a string that represents the CSS classes that will be applied to the element.
     style?: React.CSSProperties, // validate style is a CSSProperties that represents the inline styles that will be applied to the element.
     children?: React.ReactNode, // validate children is a ReactNode that represents the child elements of the element.
@@ -21,10 +22,9 @@ interface ButtonPropsType extends React.ButtonHTMLAttributes<HTMLButtonElement> 
     contentEditable?: boolean, // validate contentEditable is a boolean that specifies whether the element is editable.
     spellCheck?: boolean, // validate spellCheck is a boolean that specifies whether the element is spell-checked.
     hidden?: boolean, // validate hidden is a boolean that specifies whether the element is hidden.
-    accessKey?: string, // validate accessKey is a string that specifies the access key for the element.
-    autoCapitalize?: string, // validate autoCapitalize is a string that specifies the auto-capitalization behavior of the element.
-    autoCorrect?: string, // validate autoCorrect is a string that specifies the auto-correction behavior of the element.
-    autoSave?: string, // validate autoSave is a string that specifies the auto-save behavior of the element.
+    accessKey?: string, // validate accessKey is a string that specifies the access key for the element.   
+    labelClass?: string, // validate labelClass is a string that represents the CSS classes that will be applied to the label element.
+
 }
 
-export default ButtonPropsType;
+export default SelectPropsType;

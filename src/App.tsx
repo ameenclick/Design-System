@@ -27,8 +27,11 @@ function App() {
         classes="sub-title"
       />
       <Button
-        classes="btn" 
-        style={{backgroundColor: 'blue', color: 'white', textAlign: 'center'}}
+        type='button'
+        variant="secondary" 
+        variantType='outline'
+        isLoading={true}
+        //style={{backgroundColor: 'blue', color: 'white', textAlign: 'center'}}
         onClick={handleOnClick}
         //disabled
         autoFocus

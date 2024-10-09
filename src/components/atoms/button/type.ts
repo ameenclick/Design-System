@@ -1,9 +1,15 @@
 
+type ButtonType = "submit" | "reset" | "button";
+type ButtonVariant = "primary" | "secondary" | "tertiary";
+type ButtonVariantType= "outline" | "filled";
+
 interface ButtonPropsType extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    type?: "button" | "submit" | "reset", // validate type is a string that represents the type of the button element.
-    label?: string, // validate label is a string that represents the label of the button element.
+    variant?: ButtonVariant,
+    variantType?: ButtonVariantType,
+    type?: ButtonType, // validate type is a string that represents the type of the button element.
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void, // validate onClick is a function that handles the click event of the button element.
     onSubmit?: (event: React.FormEvent<HTMLButtonElement>) => void, // validate onSubmit is a function that handles the submit event of the button element.
+    isLoading?: boolean, // validate wheather the button requires a boolean or not
     classes?: string, // validate classes is a string that represents the CSS classes that will be applied to the element.
     style?: React.CSSProperties, // validate style is a CSSProperties that represents the inline styles that will be applied to the element.
     children?: React.ReactNode, // validate children is a ReactNode that represents the child elements of the element.

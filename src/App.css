@@ -5,6 +5,8 @@
   text-align: center;
 }
 
+/* Rocket up animation start */
+
 .logo {
   height: 10em;
   padding: 1.5em;
@@ -29,23 +31,13 @@
       opacity: 1;
       transform: translateY(0) scale(1.2) rotate(15deg);
   }
-  /* 40% {
-      transform: translateY(-50px) scale(1) rotate(0deg);
-  }
-  60% {
-      transform: translateY(-200px) scale(1) rotate(15deg);
-  }
-  80% {
-      transform: translateY(-1000px) scale(1) rotate(30deg);
-  }
-  90% {
-      transform: translateY(-200px) scale(1) rotate(15deg);
-  } */
   100% {
       opacity: 1;
       transform: translateY(0) scale(1) rotate(0deg);
   }
 }
+/* Rocket up animation end */
+
 
 .smoke {
   position: absolute;
